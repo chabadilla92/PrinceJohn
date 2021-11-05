@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ ticker }}</h1>
+    <ul class="list-group">
+        <li class="list-group-item">Current Price: {{ c }}</li>
+        <li class="list-group-item">High: {{ h }}</li>
+        <li class="list-group-item">Low: {{ l }}</li>
+        <li class="list-group-item">Open: {{ o }}</li>
+        <li class="list-group-item">Previous Closing Price: {{ pc }}</li>
+    </ul>
+</div>
+{% endblock %}
